@@ -28,17 +28,17 @@
     <h1 class="text-2xl font-bold">{data.meta.title}</h1>
     <p class="text-sm">Date of completion: {formatDate(data.meta.date)}</p>
     <p class="text-sm">Platform: {data.meta.platform}</p>
-    <div class="flex flex-wrap space-x-2" aria-label="Tech stack">
+    <div class="flex flex-wrap space-x-2 items-center text-sm" aria-label="Tech stack">
       <span>Tech stack:</span>
       {#each data.meta.stack as stack}
-        <span class="bg-third-green px-2 py-1 rounded">{stack}</span>
+        <span class="bg-third-green p-1 rounded">{stack}</span>
       {/each}
     </div>
     <p class="text-sm">GitHub: <a href={data.meta.github} class="text-blue-600 underline">{data.meta.github}</a></p>
   </hgroup>
 
   <article class="mt-10" aria-labelledby="project-content">
-    <div class="prose">
+    <div class="prose max-w-none prose-img:mx-auto prose-img:block">
       <!-- Render markdown content -->
       {@render data.content()}
     </div>
