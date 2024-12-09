@@ -4,8 +4,8 @@ description: 'Tandur is a capstone project focused on developing IoT-based agric
 keywords: ['LoRa, Websocket, ESP32, Next.js, Firebase']
 date: '2023-4-16'
 heroimage:
-    url: /heroimage/blog-placeholder-1.jpg
-    alt: 'GitHub wallpaper'
+    url: /projects/tandur/tandur-heroimage.jpg
+    alt: 'Photo by Benjamin le Roux on Unsplash'
 platform: Web
 stack: ['LoRa, Websocket, ESP32, Next.js']
 github: https://github.com/kirontoo/astro-theme-cody
@@ -47,9 +47,6 @@ The **User Interface** is built with **Next.js**, where all the collected data i
 - Automatic water pump control: The system automatically activates the water pump when the weather and soil conditions are dry.
 - Reduces water wastage and ensures plants receive adequate hydration during dry periods.
 
-## Achievements
-- Capstone Best Presentation: Recognized as the top-performing team among 38 participants.
-
 ## Screenshots
 
 ### 1. Tandur login page
@@ -71,6 +68,19 @@ The dashboard provides users with real-time insights into farm conditions. It di
 ## Actual Device
 
 ![Tandur device](/projects/tandur/actual-device.jpg)
+
+## Achievements
+- Capstone Best Presentation: Recognized as the top-performing team among 38 participants.
+
+## Acknowledgements
+
+I would like to express our sincere gratitude to the following individuals for their invaluable contributions to the development of the Tandur IoT system:
+
+- **Ave Syah Shina**
+- **Ilham Sukarsa**
+- **Muhammad Rasyid**
+
+Without their hard work and collaboration, this project would not have been possible. Thank you for your support and commitment to the success of Tandur.
 
 
 
