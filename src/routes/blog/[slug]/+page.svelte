@@ -24,7 +24,7 @@
   </figure>
 
   <hgroup>
-    <h1 class="text-2xl font-bold mt-6" id="post-title">{data.meta.title}</h1>
+    <h1 class="text-3xl font-bold mt-6" id="post-title">{data.meta.title}</h1>
     <p class="text-sm" aria-label={`Published on ${formatDate(data.meta.date)}`}>
       Published on {formatDate(data.meta.date)}
     </p>

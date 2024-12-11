@@ -15,7 +15,7 @@ github: https://github.com/kirontoo/astro-theme-cody
 
 **Tandur** is a final year capstone project focused on developing IoT-based agriculture, implementing LoRa (Long Range) and websocket technology to monitor plant conditions
 
-The Tandur system allows users to select specific plants, such as tomatoes, strawberries, or chili, based on their unique water requirements. Utilizing a water dripping method instead of conventional sprinklers or irrigation techniques, Tandur ensures water efficiency. The system calculates the optimal amount of water needed for plant growth using evaporation and plant-specific formulas. This approach not only conserves water but also supports healthy and sustainable plant growth, tailored to each plant’s needs.
+Tandur allows users to select specific plants, such as tomatoes, strawberries, or chili, based on their unique water requirements. Utilizing a water dripping method instead of conventional sprinklers or irrigation techniques, Tandur ensures water efficiency. The system calculates optimal amount of water needed for plant growth using evaporation and plant-specific formulas. This approach not only conserves water but also supports healthy and sustainable plant growth, tailored to each plant’s needs.
 
 ---
 
@@ -23,16 +23,16 @@ The Tandur system allows users to select specific plants, such as tomatoes, stra
 
 ![Tandur scheme](/projects/tandur/how-it-works.jpg)
 
-The Tandur IoT system operates through three key components: the **Electrical System**, the **Server**, and the **User Interface**. Each component plays a vital role in ensuring the seamless operation of the smart irrigation system.
+Tandur IoT system operates through three key components: **Electrical System**, **Server**, and **User Interface**. Each component plays a vital role in ensuring seamless operation of smart irrigation system.
 
 ### a. Electrical (Physical Device and Sensor)
-The **Electrical System** consists of sensors and the ESP32 LoRa module. The **humidity** and **water debit sensors** measure soil moisture and water flow. When the system detects that the soil is dry or water levels are low, it sends this data to the ESP32 LoRa module. Based on these readings, the ESP32 can turn the **water pump on or off**, activating the water dripping system to irrigate the plants efficiently. The sensors constantly monitor the plant conditions to ensure that the correct amount of water is supplied when needed.
+**Electrical System** consists of sensors and ESP32 LoRa module. The **humidity** and **water debit sensors** measure soil moisture and water flow. When the system detects that the soil is dry or water levels are low, it sends this data to ESP32 LoRa module. Based on these readings, ESP32 can turn **water pump on or off**, activating water dripping system to irrigate plants efficiently. The sensors constantly monitor plant conditions to ensure that correct amount of water is supplied when needed.
 
 ### b. Server
-The data from the **ESP32 LoRa** module is sent to an **IoT server** like **Antares** (similar to ThinkSpeak), which collects and stores the data. The server uses **websocket** technology with **socket.io** to provide real-time data transmission. This allows the system to send updates instantly to the user interface. The server continuously listens for new data from the sensors, ensuring that the system responds to real-time changes in plant conditions.
+Data from **ESP32 LoRa** module is sent to an **IoT server** like **Antares** (similar to ThinkSpeak), which collects and stores the data. The server uses **websocket** technology with **socket.io** to provide real-time data transmission. This allows the system to send updates instantly to user interface. The server continuously listens for new data from sensors, ensuring that system responds to real-time changes in plant conditions.
 
 ### c. User Interface (Next.js App)
-The **User Interface** is built with **Next.js**, where all the collected data is displayed for users to view and interact with. The system integrates with **Firebase** for user authentication, securely storing user credentials. The UI also provides real-time weather data, sourced from **SolCast** and **OpenWeather** APIs, allowing users to monitor local conditions that influence irrigation decisions. Through the interface, users can track the performance of the irrigation system, see historical data, and manage their plants more effectively.
+**User Interface** is built with **Next.js**, where all the collected data is displayed for users to view and interact with. The system integrates with **Firebase** for user authentication, securely storing user credentials. The UI also provides real-time weather data, sourced from **SolCast** and **OpenWeather** APIs, allowing users to monitor local conditions that influence irrigation decisions. Through the interface, users can track performance of the irrigation system, see historical data, and manage their plants more effectively.
 
 ---
 
@@ -48,7 +48,7 @@ The **User Interface** is built with **Next.js**, where all the collected data i
 - Provide essential information such as temperature, humidity, and sunlight.
 
 ### Smart Irrigation System
-- Automatic water pump control: The system automatically activates the water pump when the weather and soil conditions are dry.
+- Automatic water pump control: The system automatically activates water pump when the weather and soil conditions are dry.
 - Reduces water wastage and ensures plants receive adequate hydration during dry periods.
 
 ---
@@ -58,7 +58,7 @@ The **User Interface** is built with **Next.js**, where all the collected data i
 ### 1. Tandur login page
 ![Tandur login page](/projects/tandur/login-page.png)
 
-The login page allows users to sign in to the Tandur IoT dashboard using credentials provided by our team. There is no option to sign up independently because the service requires on-site installation of IoT devices at the user's farm. Once the devices are installed, users can access their accounts with pre-provided credentials to manage their farm effectively.
+Login page allows users to sign in to Tandur IoT dashboard using credentials provided by our team. There is no option to sign up independently because the service requires on-site installation of IoT devices at the user's farm. Once the devices are installed, users can access their accounts with pre-provided credentials to manage their farm effectively.
 
 
 ### 2. Tandur select plant page
@@ -86,7 +86,7 @@ The dashboard provides users with real-time insights into farm conditions. It di
 
 ## Acknowledgements
 
-I would like to express our sincere gratitude to the following individuals for their invaluable contributions to the development of the Tandur IoT system:
+I would like to express our sincere gratitude to following individuals for their invaluable contributions to the development of Tandur IoT system:
 
 - **Ave Syah Shina**
 - **Ilham Sukarsa**

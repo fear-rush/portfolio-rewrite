@@ -11,7 +11,7 @@ const mdsvexOptions = {
   extensions: [".md"],
   highlight: {
     highlighter: await createHighlighter(
-      { langs: ["css", "html", "typescript", "javascript", "markdown"] },
+      { langs: ["css", "html", "typescript", "javascript", "markdown", "yaml"] },
       { theme: "tokyo-night" }
     ),
   },

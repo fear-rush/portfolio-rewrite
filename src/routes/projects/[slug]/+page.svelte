@@ -25,8 +25,8 @@
   </figure>
 
   <hgroup class="flex flex-col space-y-2 mt-6">
-    <h1 class="text-2xl font-bold">{data.meta.title}</h1>
-    <p class="text-sm">Date of completion: {formatDate(data.meta.date)}</p>
+    <h1 class="text-3xl font-bold">{data.meta.title}</h1>
+    <p class="text-sm">Date posted: {formatDate(data.meta.date)}</p>
     <p class="text-sm">Platform: {data.meta.platform}</p>
     <div class="flex flex-wrap space-x-2 items-center text-sm" aria-label="Tech stack">
       <span>Tech stack:</span>
