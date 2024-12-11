@@ -38,7 +38,7 @@
   </hgroup>
 
   <article class="mt-10" aria-labelledby="project-content">
-    <div class="prose max-w-none prose-img:mx-auto prose-img:block">
+    <div class="prose max-w-none prose-img:mx-auto prose-img:block prose-img:w-3/4">
       <!-- Render markdown content -->
       {@render data.content()}
     </div>
