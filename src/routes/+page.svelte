@@ -4,15 +4,22 @@
   const { data } = $props();
 </script>
 
+<svelte:head>
+  <title>unintelligent dev</title>
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="unintelligent dev" />
+  <meta name="description" content="Welcome to my corner of the internet" />
+  <meta name="keywords" content="blog, posts, unintelligent dev, Muhammad Firas, Firas" />
+  <meta name="robots" content="index, follow" />
+</svelte:head>
+
 <div class="w-full bg-light-gray p-4">
   <!-- Main introduction section -->
   <section aria-labelledby="intro-heading">
     <hgroup>
       <h1 id="intro-heading" class="text-lg font-bold">Hello World</h1>
       <p class="mt-4">
-        Welcome to my digital garden. This space showcases my projects, shares
-        valuable insights from my blog (I hope), and spreads knowledge on topics
-        that interest me.
+        Welcome to my corner of the internet. I'm not really sure what i'm doing with my life, but I figured I'd start by putting together this space. It's a mix of my random projects, some blog posts (if I ever get around to writing them, and maybe some random thoughts too), and whatever else catches my interest. I'm just here, quietly figuring things out, learning about computers, and occasionally doing something cool.
       </p>
     </hgroup>
   </section>
@@ -26,7 +33,7 @@
           <li class="mt-4">
             <a
               class="underline"
-              href="/blog/{post.slug}"
+              href="/posts/{post.slug}"
               aria-label="Read more about {post.title}"
             >
               {post.title}

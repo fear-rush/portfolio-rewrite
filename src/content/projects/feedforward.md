@@ -4,11 +4,10 @@ description: 'Feed Forward is a thesis project that focused on developing a web-
 keywords: ['Geolocation', 'Geohash', 'Firebase', 'Web Application']
 date: '2023-4-16'
 heroimage:
-    url: /projects/feedforward/feedforward-heroimage.jpg
+    url: /assets/projects/feedforward/feedforward-heroimage.webp
     alt: 'Photo by Element5 Digital on Unsplash'
 platform: Web
 stack: ['Geolocation', 'Geohash', 'Firebase', 'Next.js']
-github: https://github.com/kirontoo/astro-theme-cody
 ---
 
 ## Overview
@@ -19,8 +18,6 @@ Key objectives:
 - Minimize food waste at the consumption level.
 - Provide an accessible platform for sharing surplus food.
 - Strengthen community ties through sustainable food-sharing practices.
-
----
 
 ## How It Works
 
@@ -38,16 +35,14 @@ Feed Forward operates through three key components:
 - Built with a responsive web design to allow users to share and discover food nearby.
 - Displays available food items, maps, and user profiles.
 
----
-
 ## Geohash and Geolocation
 
 ### 1. Geohash
-![geohash z-order curve](/projects/feedforward/geohash-1.jpg)|![geohash grid](/projects/feedforward/geohash-2.jpg)
+![geohash z-order curve](/assets/projects/feedforward/geohash-1.webp)|![geohash grid](/assets/projects/feedforward/geohash-2.webp)
 :-------------------------:|:-------------------------:
 <center> Geohash z-order curve </center> |  <center> Geohash grid </center>
 
-Geohash is a spatial data structure that encodes geographical coordinates (latitude and longitude) into a compact alphanumeric string. It is hierarchical, meaning that **as the string length increases, the represented area becomes smaller and more precise.
+Geohash is a spatial data structure that encodes geographical coordinates (latitude and longitude) into a compact alphanumeric string. It is hierarchical, meaning that **as the string length increases**, the represented area becomes smaller and more precise.
 
 #### a. How Geohash Works
 **Latitude and Longitude Encoding**:
@@ -74,8 +69,6 @@ The Earth's surface is divided into a grid-like structure where each cell corres
 ### 2. Geolocation
 Geolocation is the process of identifying the geographical location of a device or user using technologies like GPS, Wi-Fi, or IP-based systems. Geolocation can be used in a browser with the Geolocation API by using navigator.getCurrentPosition(). It returns coords.latitude and coords.longitude if the user grants permission to access their location. If the user denies permission, it returns null.
 
----
-
 ## Features
 
 - **Nearby Food Sharing**: Enables users to find food-sharing opportunities within their vicinity.
@@ -86,19 +79,15 @@ Geolocation is the process of identifying the geographical location of a device 
   - Unique badges with color for top contributors who frequently share food.
   - Encourages participation through friendly competition, tapping into the **natural human tendency to compete and strive for recognition**. This creates a sense of achievement while promoting sustainable practices.
 
----
-
 ## Screenshots
 
 ### 1. Home Page
-![Home page](/projects/feedforward/home-page.png)
+![Home page](/assets/projects/feedforward/home-page.webp)
 
 The home page provides options for users to sign in or sign up. New users can create an account using the **Sign Up** button, while existing users can access their accounts through the **Sign In** button.
 
----
-
 ### 2. Dashboard Page
-![Dashboard page](/projects/feedforward/dashboard-page.png)
+![Dashboard page](/assets/projects/feedforward/dashboard-page.webp)
 
 Authenticated users are directed to the dashboard page. It features:
 - A **banner image** that links to articles or news related to food waste when clicked.
@@ -108,17 +97,13 @@ Authenticated users are directed to the dashboard page. It features:
   - **Share Food Button**: Opens a form to share food.
   - **Profile Button**: Directs the user to their profile page.
 
----
-
 ### 3. Leaderboard
-![Leaderboard](/projects/feedforward/leaderboard.png)
+![Leaderboard](/assets/projects/feedforward/leaderboard.webp)
 
 The leaderboard modal showcases the top 5 users with the highest points, highlighting their contributions to food sharing. Points are earned based on the amount of food given. For privacy, the username is only showing only first 4 letters of their name.
 
----
-
 ### 4. Food Detail Page
-![Food detail page](/projects/feedforward/fooddetail-page.png)
+![Food detail page](/assets/projects/feedforward/fooddetail-page.webp)
 
 When a user clicks on a food item listed on the dashboard, they are directed to the food detail page. This page includes:
 - An **image** of the food.
@@ -128,27 +113,17 @@ When a user clicks on a food item listed on the dashboard, they are directed to 
 - The **location** of the food, displayed on a map.
 - A **Take Food button** that allows users to claim the food.
 
----
-
 ### 5. Chat Modal
-![Chat modal](/projects/feedforward/chat-modal.png)
+![Chat modal](/assets/projects/feedforward/chat-modal.webp)
 
 After clicking the **Take Food button** on the food detail page, the giver and taker can communicate through the chat modal. This feature facilitates coordination about the food pickup, such as timing and location, ensuring smooth interaction between users.
 
+## Final Words
 
----
+Thank you for taking the time to learn about Feed Forward. This project was a labor of love and reprsents my effort to create a platform that promotes sustainability and community engagement through technology. While the project is currently not available, I hope it inspires others to explore the possibilities of geolocation-based services and their potential to make a positive impact.
 
-## Challenges
+## Disclaimer
 
-- **Geolocation Permission**: Ensuring users grant location permissions for accurate functionality.
-- **Real-Time Synchronization**: Maintaining low latency for updates between users.
-- **User Adoption**: Encouraging users to actively participate in food-sharing activities.
+Unfortunately, Feed Forwards is not available at the moment. Maintaining this project is too expensive for me, especially due to high costs associated with accessing geocoding and reverse geocoding APIs from Google for address mapping and location services. I hope to revisit this idea in the future when it becomes more feasible.
 
----
-
-## End Result
-
-- **Geohash Efficiency**: Achieved accurate location clustering with minimal execution time, as verified by testing.
-- **Usability Score**: The system received a usability score of **79.24**, indicating good usability.
-
----
+Anyway, you can access the code in this github repo [https://github.com/fear-rush/feedforward](https://github.com/fear-rush/feedforward)

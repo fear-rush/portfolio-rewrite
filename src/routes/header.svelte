@@ -16,7 +16,7 @@
   <ul class="hidden md:flex space-x-4">
     <li><a href="/">/home</a></li>
     <li><a href="/about">/about</a></li>
-    <li><a href="/blog">/blog</a></li>
+    <li><a href="/posts">/posts</a></li>
     <li><a href="/projects">/projects</a></li>
   </ul>
 
@@ -53,7 +53,7 @@
       <ul class="flex flex-col text-right py-3 space-y-4 mr-1">
         <li><a href="/" onclick={toggleMenu}>/home</a></li>
         <li><a href="/about" onclick={toggleMenu}>/about</a></li>
-        <li><a href="/blog" onclick={toggleMenu}>/blog</a></li>
+        <li><a href="/posts" onclick={toggleMenu}>/posts</a></li>
         <li><a href="/projects" onclick={toggleMenu}>/projects</a></li>
       </ul>
     </div>

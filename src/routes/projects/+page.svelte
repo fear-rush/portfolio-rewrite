@@ -4,6 +4,15 @@
   const { data } = $props();
 </script>
 
+<svelte:head>
+  <title>/projects</title>
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="unintelligent dev" />
+  <meta name="description" content="Projects Page" />
+  <meta name="keywords" content="blog, posts, projects, unintelligent dev, Muhammad Firas, Firas" />
+  <meta name="robots" content="index, follow" />
+</svelte:head>
+
 <div class="w-full bg-light-gray p-4">
   <h1 class="text-lg font-bold" id="projects-heading">Projects</h1>
 

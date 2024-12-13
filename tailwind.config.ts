@@ -4,7 +4,19 @@ import type { Config } from "tailwindcss";
 
 export default {
   content: ["./src/**/*.{html,js,svelte,ts}"],
-  extend: {},
+  extend: {
+    prose: {
+      DEFAULT: {
+        css: {
+          'img': {
+            'aspect-ratio': 'auto',
+            'max-width': '100%',
+            'height': 'auto'
+          }
+        }
+      }
+    }
+  },
   theme: {
     fontFamily: {
       sans: ['Space Mono', 'monospace']
