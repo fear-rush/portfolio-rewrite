@@ -16,3 +16,5 @@ export async function load({ fetch }): Promise<{ projects: Project[] }> {
     throw error(500, `error ${e}`);
   }
 }
+
+
