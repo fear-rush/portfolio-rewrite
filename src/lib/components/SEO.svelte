@@ -6,6 +6,10 @@
   export let url: string = "";
   export let image: string = "";
   export const datePublished: string | undefined = undefined;
+
+  const baseUrl = "https://e89a8345.portfolio-rewrite-2t4.pages.dev/";
+  const absoluteUrl = url ? new URL(url, baseUrl).toString() : baseUrl;
+  const absoluteImage = image ? new URL(image, baseUrl).toString() : "";
 </script>
 
 <svelte:head>
@@ -15,26 +19,27 @@
   <meta name="keywords" content={keywords} />
   <meta name="robots" content="index, follow" />
 
+  <!-- Open Graph -->
   <meta property="og:type" content={type} />
-  <meta property="og:url" content={url} />
+  <meta property="og:url" content={absoluteUrl} />
   <meta property="og:title" content={title} />
   <meta property="og:description" content={description} />
-  <meta property="og_site_name" content={title} />
-  <meta property="og:image" content={image} />
+  <meta property="og:site_name" content={title} />
+  <meta property="og:image" content={absoluteImage} />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
 
-  <meta property="twitter:domain" content="unintelligent.dev" />
-  <meta property="twitter:url" content={url} />
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@muhfiras1" />
   <meta name="twitter:creator" content="@muhfiras1" />
-  <meta name="twitter:domain" content="unintelligent.dev" />
   <meta name="twitter:title" content={title} />
   <meta name="twitter:description" content={description} />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:image:src" content={image} />
-  <meta name="twitter:widgets:new-embed-design" content="on" />
-  <meta name="twitter:label1" content="Written by" />
-  <meta name="twitter:data1" content="Muhammad Firas" />
+  <meta name="twitter:image" content={absoluteImage} />
+  <meta name="twitter:domain" content="unintelligent.dev" />
+  <meta name="twitter:url" content={absoluteUrl} />
 
+  <!-- Schema.org -->
   <script type="application/ld+json">
     {JSON.stringify({
       "@context": "https://schema.org",
@@ -47,9 +52,9 @@
       "datePublished": datePublished,
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": url,
+        "@id": absoluteUrl,
       },
-      "image": image,
+      "image": absoluteImage,
       "description": description
     })}
   </script>
