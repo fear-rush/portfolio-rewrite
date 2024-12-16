@@ -9,7 +9,7 @@
   }
 </script>
 
-<nav class="flex items-center justify-between my-3 text-primary-green relative">
+<nav class="flex items-center justify-between py-4 text-primary-green relative">
   <a href="/" class="text-xl font-semibold"> [{config.title}] </a>
 
   <!-- Desktop Links -->
@@ -46,11 +46,11 @@
   <!-- Mobile Links -->
   {#if menuOpen}
     <div
-      class="md:hidden bg-white w-full absolute top-full left-0"
+      class="md:hidden bg-white w-full absolute top-full left-0 z-50"
       in:fade
       out:fade
     >
-      <ul class="flex flex-col text-right py-3 space-y-4 mr-1">
+      <ul class="flex flex-col text-right py-3 space-y-4 mr-4">
         <li><a href="/" onclick={toggleMenu}>/home</a></li>
         <li><a href="/about" onclick={toggleMenu}>/about</a></li>
         <li><a href="/posts" onclick={toggleMenu}>/posts</a></li>

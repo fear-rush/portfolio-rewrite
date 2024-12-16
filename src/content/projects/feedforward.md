@@ -2,7 +2,7 @@
 title: 'Feed Forward: A Web-Based Food Sharing Application'
 description: 'Feed Forward is a thesis project that focused on developing a web-based application for nearby food sharing, utilizing geolocation technology and the geohash algorithm.'
 keywords: ['Geolocation', 'Geohash', 'Firebase', 'Web Application']
-date: '2023-4-16'
+date: '2024-10-28'
 heroimage:
     url: /assets/projects/feedforward/feedforward-heroimage.webp
     alt: 'Photo by Element5 Digital on Unsplash'

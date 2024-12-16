@@ -2,7 +2,7 @@
 title: 'Tandur IoT: Precision Drip Water Irrigation System'
 description: 'Tandur is a capstone project focused on developing IoT-based agriculture, implementing LoRa (Long Range) and websocket technology to monitor plant conditions.'
 keywords: ['LoRa, Websocket, ESP32, Next.js, Firebase']
-date: '2023-4-16'
+date: '2024-10-17'
 heroimage:
     url: /assets/projects/tandur/tandur-heroimage.webp
     alt: 'Photo by Benjamin le Roux on Unsplash'

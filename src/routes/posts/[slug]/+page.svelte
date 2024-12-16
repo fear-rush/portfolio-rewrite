@@ -27,7 +27,7 @@
 
 <div class="w-full bg-light-gray p-4">
   <figure class="w-full">
-    <div class="aspect-auto w-full relative">
+    <div class="aspect-auto w-full relative z-0">
       <img
         src={data.meta.heroimage.url}
         alt={data.meta.heroimage.alt}
