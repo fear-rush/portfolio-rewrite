@@ -1,7 +1,6 @@
 <script lang="ts">
   import { formatDate } from "$lib/utils/dateformat";
   const { data } = $props();
-  console.log(data)
 </script>
 
 <svelte:head>

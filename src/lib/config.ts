@@ -7,7 +7,7 @@ type Config = {
 };
 
 export const config: Config = {
-  title: "unintelligent dev",
+  title: "unintelligent.dev",
   description: "Personal website featuring a blog and project showcases.",
   url: dev ? "http://localhost:5173" : "http://localhost:5173",
 };
