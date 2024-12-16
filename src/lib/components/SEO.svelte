@@ -7,7 +7,7 @@
   export let image: string = "";
   export const datePublished: string | undefined = undefined;
 
-  const baseUrl = "https://e89a8345.portfolio-rewrite-2t4.pages.dev/";
+  const baseUrl = "https://portfolio-rewrite-2t4.pages.dev";
   const absoluteUrl = url ? new URL(url, baseUrl).toString() : baseUrl;
   const absoluteImage = image ? new URL(image, baseUrl).toString() : "";
 </script>
