@@ -202,7 +202,7 @@ By default, docker will overwrite your IPtables, so docker will expose the servi
   <p>You should be redirected automatically to the target URL: <a href="/login?next=/">/login?next=/</a>. If not, click the link.
   ```
 2. **Access with VPN Profile** <br>
-  Log in to your WireGuard dashboard at `YOUR_IP_ADDRESS/HOST:51821` and create a new profile. Next, download the WireGuard VPN client and import the profile. You can download the WireGuard VPN client from here [https://www.wireguard.com/install/](https://www.wireguard.com/install/). Once connected, try accessing `10.21.1.60:80`. The pgAdmin web UI should appear.
+  Log in to your WireGuard dashboard at `YOUR_IP_ADDRESS/HOST:51821` and create a new profile. Next, download the WireGuard VPN client and import the profile. You can download the WireGuard VPN client from here [WireGuard Client](https://www.wireguard.com/install/). Once connected, try accessing `10.21.1.60:80`. The pgAdmin web UI should appear.
 
 
 ## Final Words
