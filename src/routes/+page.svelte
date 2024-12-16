@@ -1,17 +1,29 @@
 <script lang="ts">
+  import Seo from "$lib/components/SEO.svelte";
+  import { base } from "$app/paths";
+  import { page } from "$app/stores";
   import { formatDate } from "$lib/utils/dateformat";
 
   const { data } = $props();
 </script>
 
-<svelte:head>
+<!-- <svelte:head>
   <title>unintelligent.dev</title>
   <meta property="og:type" content="website" />
   <meta property="og:title" content="unintelligent dev" />
   <meta name="description" content="Welcome to my corner of the internet" />
   <meta name="keywords" content="blog, posts, unintelligent.dev, Muhammad Firas, Firas" />
   <meta name="robots" content="index, follow" />
-</svelte:head>
+</svelte:head> -->
+
+<Seo 
+  title="unintelligent.dev"
+  description="Welcome to my corner of the internet—a space for my random projects, blog posts, thoughts, and whatever catches my interest. Figuring things out, learning about computers, and occasionally doing something cool."
+  type="website"
+  keywords="blog, posts, unintelligent.dev, Muhammad Firas, Firas"
+  url={$page.url.toString()}
+  image={`${base}/logo-placeholder.png`}
+/>
 
 <div class="w-full bg-light-gray p-4">
   <!-- Main introduction section -->

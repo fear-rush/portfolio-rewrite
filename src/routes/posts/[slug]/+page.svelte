@@ -1,16 +1,29 @@
 <script lang="ts">
+  import Seo from "$lib/components/SEO.svelte";
+  import { page } from "$app/stores";
   import { formatDate } from "$lib/utils/dateformat";
+
   const { data } = $props();
 </script>
 
-<svelte:head>
+<!-- <svelte:head>
   <title>{data.meta.title}</title>
   <meta property="og:type" content="article" />
   <meta property="og:title" content={data.meta.title} />
   <meta name="description" content={data.meta.description} />
   <meta name="keywords" content="blog, posts, {data.meta.keywords.join(', ')}" />
   <meta name="robots" content="index, follow" />
-</svelte:head>
+</svelte:head> -->
+
+<Seo 
+  title={data.meta.title}
+  description={data.meta.description}
+  type="article"
+  keywords={data.meta.keywords.join(', ')}
+  url={$page.url.toString()}
+  image={data.meta.heroimage.url}
+  datePublished={data.meta.date}
+/>
 
 <div class="w-full bg-light-gray p-4">
   <figure class="w-full">
