@@ -1,8 +1,0 @@
-name = "portfolio-rewrite"
-compatibility_date = "2024-03-19"
-
-[site]
-bucket = ".svelte-kit/cloudflare"
-
-[build]
-command = "npm run build"
