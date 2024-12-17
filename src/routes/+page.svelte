@@ -7,15 +7,6 @@
   const { data } = $props();
 </script>
 
-<!-- <svelte:head>
-  <title>unintelligent.dev</title>
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="unintelligent dev" />
-  <meta name="description" content="Welcome to my corner of the internet" />
-  <meta name="keywords" content="blog, posts, unintelligent.dev, Muhammad Firas, Firas" />
-  <meta name="robots" content="index, follow" />
-</svelte:head> -->
-
 <Seo 
   title="unintelligent.dev"
   description="Welcome to my corner of the internet—a space for my random projects, blog posts, thoughts, and whatever catches my interest. Figuring things out, learning about computers, and occasionally doing something cool."
@@ -26,7 +17,6 @@
 />
 
 <div class="w-full bg-light-gray p-4">
-  <!-- Main introduction section -->
   <section aria-labelledby="intro-heading">
     <hgroup>
       <h1 id="intro-heading" class="text-lg font-bold">Hello World</h1>
@@ -36,7 +26,6 @@
     </hgroup>
   </section>
 
-  <!-- Blog posts section -->
   <section class="mt-8" aria-labelledby="posts-heading">
     <h2 id="posts-heading" class="text-lg font-bold">Posts</h2>
     {#if data.posts && data.posts.length > 0}
@@ -61,7 +50,6 @@
     {/if}
   </section>
 
-  <!-- Projects section -->
   <section class="mt-8" aria-labelledby="projects-heading">
     <h2 id="projects-heading" class="text-lg font-bold">Projects</h2>
     {#if data.projects && data.projects.length > 0}

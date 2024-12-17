@@ -12,7 +12,6 @@
 <nav class="flex items-center justify-between py-4 text-primary-green relative">
   <a href="/" class="text-xl font-semibold"> [{config.title}] </a>
 
-  <!-- Desktop Links -->
   <ul class="hidden md:flex space-x-4">
     <li><a href="/">/home</a></li>
     <li><a href="/about">/about</a></li>

@@ -19,7 +19,6 @@
   <meta name="keywords" content={keywords} />
   <meta name="robots" content="index, follow" />
 
-  <!-- Open Graph -->
   <meta property="og:type" content={type} />
   <meta property="og:url" content={absoluteUrl} />
   <meta property="og:title" content={title} />
@@ -29,7 +28,6 @@
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
 
-  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@muhfiras1" />
   <meta name="twitter:creator" content="@muhfiras1" />
@@ -39,7 +37,6 @@
   <meta name="twitter:domain" content="unintelligent.dev" />
   <meta name="twitter:url" content={absoluteUrl} />
 
-  <!-- Schema.org -->
   <script type="application/ld+json">
     {JSON.stringify({
       "@context": "https://schema.org",

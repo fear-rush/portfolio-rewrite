@@ -6,15 +6,6 @@
   const { data } = $props();
 </script>
 
-<!-- <svelte:head>
-  <title>{data.meta.title}</title>
-  <meta property="og:type" content="article" />
-  <meta property="og:title" content={data.meta.title} />
-  <meta name="description" content={data.meta.description} />
-  <meta name="keywords" content="blog, posts, {data.meta.keywords.join(', ')}" />
-  <meta name="robots" content="index, follow" />
-</svelte:head> -->
-
 <Seo 
   title={data.meta.title}
   description={data.meta.description}
@@ -25,37 +16,44 @@
   datePublished={data.meta.date}
 />
 
-<div class="w-full bg-light-gray p-4">
-  <figure class="w-full">
-    <div class="aspect-auto w-full relative z-0">
-      <img
-        src={data.meta.heroimage.url}
-        alt={data.meta.heroimage.alt}
-        class="absolute top-0 left-0 w-full h-full object-cover"
-        loading="eager"
-        width="800"
-        height="400"
-      />
-    </div>
-    <figcaption class="text-sm text-gray-600 mt-2">{data.meta.heroimage.alt}</figcaption>
-  </figure>
+<div class="prose prose-lg mx-auto px-4 sm:px-6 lg:px-8">
+  <article class="max-w-none">
+    <figure class="mb-8">
+      <div class="aspect-w-16 aspect-h-9">
+        <img
+          src={data.meta.heroimage.url}
+          alt={data.meta.heroimage.alt}
+          class="object-cover rounded-lg shadow-lg"
+          loading="eager"
+        />
+      </div>
+      <figcaption class="text-sm text-gray-600 mt-2">
+        {data.meta.heroimage.alt}
+      </figcaption>
+    </figure>
 
-  <hgroup>
-    <h1 class="text-3xl font-bold mt-6" id="post-title">{data.meta.title}</h1>
-    <p class="text-sm" aria-label={`Published on ${formatDate(data.meta.date)}`}>
-      Published on {formatDate(data.meta.date)}
-    </p>
-    <div class="flex space-x-2 mt-2" aria-label="Post categories">
-      <span>Tags:</span>
-      {#each data.meta.categories as category}
-        <span class="ml-1 bg-third-green px-1 rounded">#{category}</span>
-      {/each}
-    </div>
-  </hgroup>
+    <header class="mb-8">
+      <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
+        {data.meta.title}
+      </h1>
+      
+      <div class="mt-4 space-y-2">
+        <div class="text-gray-600 text-sm md:text-base">
+          Published on {formatDate(data.meta.date)}
+        </div>
 
-  <article class="mt-10" aria-labelledby="post-title">
-    <div class="prose max-w-none prose-gray">
-      <!-- Render markdown content -->
+        <div class="flex flex-wrap gap-2 items-center">
+          <span class="text-sm md:text-base">Tags:</span>
+          {#each data.meta.categories as category}
+            <span class="bg-third-green px-2 py-1 rounded-md text-sm">
+              #{category}
+            </span>
+          {/each}
+        </div>
+      </div>
+    </header>
+
+    <div class="prose prose-lg md:prose-xl">
       {@render data.content()}
     </div>
   </article>

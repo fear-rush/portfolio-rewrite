@@ -9,7 +9,7 @@
 
 
 <div class="w-full bg-light-gray p-4">
-  <h1 class="text-lg font-bold">[About]</h1>
+  <h1 class="text-lg font-bold">About</h1>
   <p class="mt-4">
     Hello, my name is Muhammad Firas. Actually, I don't really know what my role
     is. I just love trying and discovering new things. Most of my adventures
