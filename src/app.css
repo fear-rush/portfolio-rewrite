@@ -51,7 +51,7 @@ body {
 
   /* Inline code styling */
   :not(pre) > code {
-    @apply bg-gray-100 px-1.5 py-0.5 rounded text-sm font-mono;
+    @apply bg-gray-100 px-1.5 py-0.5 rounded text-sm font-mono font-medium;
   }
 }
 

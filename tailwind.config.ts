@@ -25,6 +25,7 @@ export default {
               borderRadius: '0.25rem',
               fontSize: '0.875em',
               fontFamily: 'JetBrains Mono, monospace',
+              fontWeight: '500',
               wordBreak: 'break-all',
               whiteSpace: 'pre-wrap',
               overflowWrap: 'break-word',
