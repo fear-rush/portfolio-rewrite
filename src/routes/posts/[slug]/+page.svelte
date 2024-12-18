@@ -19,14 +19,16 @@
 <div class="prose prose-lg mx-auto px-4 sm:px-6 lg:px-8">
   <article class="max-w-none">
     <figure class="mb-8">
-      <div class="aspect-w-16 aspect-h-9">
+      {#if data.meta.heroimage}
         <img
           src={data.meta.heroimage.url}
           alt={data.meta.heroimage.alt}
-          class="object-cover rounded-lg shadow-lg"
+          width="1200"
+          height="675"
+          class="responsive-img hero-img"
           loading="eager"
         />
-      </div>
+      {/if}
       <figcaption class="text-sm text-gray-600 mt-2">
         {data.meta.heroimage.alt}
       </figcaption>

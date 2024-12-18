@@ -18,21 +18,21 @@
 
 <div class="prose prose-lg mx-auto px-4 sm:px-6 lg:px-8">
   <article class="max-w-none">
-    {#if data.meta.heroimage}
-      <figure class="mb-8">
-        <div class="aspect-w-16 aspect-h-9">
-          <img
-            src={data.meta.heroimage.url}
-            alt={data.meta.heroimage.alt}
-            class="object-cover rounded-lg shadow-lg"
-            loading="eager"
-          />
-        </div>
-        <figcaption class="text-sm text-gray-600 mt-2">
-          {data.meta.heroimage.alt}
-        </figcaption>
-      </figure>
-    {/if}
+    <figure class="mb-8">
+      {#if data.meta.heroimage}
+        <img
+          src={data.meta.heroimage.url}
+          alt={data.meta.heroimage.alt}
+          width="1200"
+          height="675"
+          class="responsive-img hero-img"
+          loading="eager"
+        />
+      {/if}
+      <figcaption class="text-sm text-gray-600 mt-2">
+        {data.meta.heroimage.alt}
+      </figcaption>
+    </figure>
 
     <header class="mb-8">
       <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
@@ -43,16 +43,12 @@
         <div class="text-gray-600 text-sm md:text-base">
           Published on {formatDate(data.meta.date)}
         </div>
-        
-        <div class="text-sm md:text-base">
-          Platform: {data.meta.platform}
-        </div>
 
-        <div class="flex flex-wrap gap-2 items-center" aria-label="Tech stack">
-          <span class="text-sm md:text-base">Tech stack:</span>
-          {#each data.meta.stack as tech}
+        <div class="flex flex-wrap gap-2 items-center">
+          <span class="text-sm md:text-base">Tags:</span>
+          {#each data.meta.categories as category}
             <span class="bg-third-green px-2 py-1 rounded-md text-sm">
-              {tech}
+              #{category}
             </span>
           {/each}
         </div>
