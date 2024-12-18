@@ -8,10 +8,10 @@
 </script>
 
 <Seo 
-  title="unintelligent.dev"
+  title="comfortablynumb.dev"
   description="Welcome to my corner of the internet—a space for my random projects, blog posts, thoughts, and whatever catches my interest. Figuring things out, learning about computers, and occasionally doing something cool."
   type="website"
-  keywords="blog, posts, unintelligent.dev, Muhammad Firas, Firas"
+  keywords="blog, posts, comfortablynumb.dev, Muhammad Firas, Firas"
   url={$page.url.toString()}
   image={`${base}/logo-placeholder.png`}
 />

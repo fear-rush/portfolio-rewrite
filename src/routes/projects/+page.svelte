@@ -7,9 +7,9 @@
 <svelte:head>
   <title>/projects</title>
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="unintelligent.dev" />
+  <meta property="og:title" content="comfortablynumb.dev" />
   <meta name="description" content="Projects Page" />
-  <meta name="keywords" content="blog, posts, projects, unintelligent.dev, Muhammad Firas, Firas" />
+  <meta name="keywords" content="blog, posts, projects, comfortablynumb.dev, Muhammad Firas, Firas" />
   <meta name="robots" content="index, follow" />
 </svelte:head>
 

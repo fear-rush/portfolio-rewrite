@@ -10,7 +10,7 @@
     <p>{$page.error?.message}</p>
     <img 
       src="{base}/logo.webp" 
-      alt="unintelligent.dev logo"
+      alt="comfortablynumb.dev logo"
       width="200"
       height="100" 
     />
