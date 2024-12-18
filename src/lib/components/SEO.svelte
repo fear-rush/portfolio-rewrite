@@ -8,7 +8,7 @@
   export const datePublished: string | undefined = undefined;
 
 
-  const baseUrl = "https://portfolio-rewrite-2t4.pages.dev";
+  const baseUrl = "https://goofygoober.rocks";
   const absoluteUrl = url ? new URL(url, baseUrl).toString() : baseUrl;
   const absoluteImage = image ? new URL(image, baseUrl).toString() : "";
 
