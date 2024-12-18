@@ -7,9 +7,9 @@
 <svelte:head>
   <title>/posts</title>
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="comfortablynumb.dev" />
+  <meta property="og:title" content="goofygoober.rocks" />
   <meta name="description" content="Posts Page" />
-  <meta name="keywords" content="blog, posts, comfortablynumb.dev, Muhammad Firas, Firas" />
+  <meta name="keywords" content="blog, posts, goofygoober.rocks, Muhammad Firas, Firas" />
   <meta name="robots" content="index, follow" />
 </svelte:head>
 

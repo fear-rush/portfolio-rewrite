@@ -1,5 +1,5 @@
 <script lang="ts">
-  export let title: string = "comfortablynumb.dev";
+  export let title: string = "goofygoober.rocks";
   export let description: string = "";
   export let type: string = "WebPage";
   export let keywords: string = "";
@@ -52,7 +52,7 @@
   <meta name="twitter:title" content={title} />
   <meta name="twitter:description" content={description} />
   <meta name="twitter:image" content={absoluteImage} />
-  <meta name="twitter:domain" content="comfortablynumb.dev" />
+  <meta name="twitter:domain" content="goofygoober.rocks" />
   <meta name="twitter:url" content={absoluteUrl} />
 
   {@html `<script type="application/ld+json">${JSON.stringify(jsonLd)}</script>`}
