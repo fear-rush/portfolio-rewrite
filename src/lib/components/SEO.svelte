@@ -7,9 +7,27 @@
   export let image: string = "";
   export const datePublished: string | undefined = undefined;
 
+
   const baseUrl = "https://portfolio-rewrite-2t4.pages.dev";
   const absoluteUrl = url ? new URL(url, baseUrl).toString() : baseUrl;
   const absoluteImage = image ? new URL(image, baseUrl).toString() : "";
+
+  const jsonLd = {
+      "@context": "https://schema.org",
+      "@type": type,
+      "headline": title,
+      "author": {
+        "@type": "Person",
+        "name": "Muhammad Firas"
+      },
+      "datePublished": datePublished,
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": absoluteUrl
+      },
+      "image": absoluteImage,
+      "description": description
+    }
 </script>
 
 <svelte:head>
@@ -37,22 +55,6 @@
   <meta name="twitter:domain" content="comfortablynumb.dev" />
   <meta name="twitter:url" content={absoluteUrl} />
 
-  <script type="application/ld+json">
-    {{
-      "@context": "https://schema.org",
-      "@type": type,
-      "headline": title,
-      "author": {
-        "@type": "Person",
-        "name": "Muhammad Firas"
-      },
-      "datePublished": datePublished,
-      "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": absoluteUrl
-      },
-      "image": absoluteImage,
-      "description": description
-    }}
-  </script>
+  {@html `<script type="application/ld+json">${JSON.stringify(jsonLd)}</script>`}
+
 </svelte:head>
