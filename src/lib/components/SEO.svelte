@@ -38,7 +38,7 @@
   <meta name="twitter:url" content={absoluteUrl} />
 
   <script type="application/ld+json">
-    {JSON.stringify({
+    {{
       "@context": "https://schema.org",
       "@type": type,
       "headline": title,
@@ -49,10 +49,10 @@
       "datePublished": datePublished,
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": absoluteUrl,
+        "@id": absoluteUrl
       },
       "image": absoluteImage,
       "description": description
-    })}
+    }}
   </script>
 </svelte:head>
