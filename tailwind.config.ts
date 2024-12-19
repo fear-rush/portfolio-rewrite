@@ -6,8 +6,8 @@ export default {
   content: ["./src/**/*.{html,js,svelte,ts}"],
   theme: {
     fontFamily: {
-      sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
-      mono: ['JetBrains Mono', 'monospace']
+      sans: ['Space Mono', 'system-ui', 'sans-serif'],
+      mono: ['monospace']
     },
     extend: {
       typography: {
@@ -19,26 +19,10 @@ export default {
             'code::after': {
               content: '""'
             },
-            'code': {
-              backgroundColor: colors.gray[100],
-              padding: '0.2em 0.4em',
-              borderRadius: '0.25rem',
-              fontSize: '0.875em',
-              fontFamily: 'JetBrains Mono, monospace',
-              fontWeight: '500',
-              wordBreak: 'break-all',
-              whiteSpace: 'pre-wrap',
-              overflowWrap: 'break-word',
-            },
             'pre': {
               overflowX: 'auto',
               whiteSpace: 'pre-wrap',
               wordWrap: 'break-word'
-            },
-            'img': {
-              marginTop: '2em',
-              marginBottom: '2em',
-              borderRadius: '0.5rem',
             },
           },
         },

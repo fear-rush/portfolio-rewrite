@@ -45,10 +45,17 @@
         </div>
 
         <div class="flex flex-wrap gap-2 items-center">
-          <span class="text-sm md:text-base">Tags:</span>
-          {#each data.meta.categories as category}
+          <span class="text-sm md:text-base">Platform:</span>
+          <span class="text-sm">
+            {data.meta.platform}
+          </span>
+        </div>
+
+        <div class="flex flex-wrap gap-2 items-center">
+          <span class="text-sm md:text-base">Stack:</span>
+          {#each data.meta.stack as tech}
             <span class="bg-third-green px-2 py-1 rounded-md text-sm">
-              #{category}
+              {tech}
             </span>
           {/each}
         </div>
