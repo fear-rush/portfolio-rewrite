@@ -16,7 +16,7 @@ Check out CV-Roast in action:
 
 ## Overview
 
-**CV-Roast** is a fun and quirky project designed to humorously critique people’s CVs using **large language models (LLMs)**. The platform processes CV documents in `.pdf` format and provides playful feedback. Powered by the **Llama3-8b-8192** model and custom system prompts, CV-Roast delivers entertaining and witty critiques, making the task of reviewing CVs more engaging and enjoyable. Thanks to [rasyidan](https://rsydn.tech) for making this project possible.
+CV-Roast is a fun and quirky project designed to humorously critique people’s CVs using large language models (LLMs). The platform processes CV documents in `.pdf` format and provides playful feedback. Powered by the Llama3-8b-8192 model and custom system prompts, CV-Roast delivers entertaining and witty critiques, making the task of reviewing CVs more engaging and enjoyable. Thanks to [rasyidan](https://rsydn.tech) for making this project possible.
 
 
 ## How It Works
@@ -32,18 +32,18 @@ Check out CV-Roast in action:
 ## Features
 
 ### LLM-Powered CV Analysis (Roast)
-- Processes `.pdf` CV documents using **Groq AI** and **Llama3-8b-8192**.
+- Processes `.pdf` CV documents using Groq AI and Llama3-8b-8192.
 - Generates humorous and detailed critiques based on custom system prompts.
 - Aimed at making CV reviews fun and engaging.
 
 ### Robust Backend
-- Developed using **FastAPI** for high-performance, asynchronous API handling.
-- Containerized using **Docker** for consistency and ease of deployment.
-- CI/CD workflows implemented using **Watchtower** to automate server image updates on Docker Hub.
+- Developed using FastAPI for high-performance, asynchronous API handling.
+- Containerized using Docker for consistency and ease of deployment.
+- CI/CD workflows implemented using Watchtower to automate server image updates on Docker Hub.
 
 ### System Monitoring and Security
-- Integrated **Grafana**, **Loki**, and **Prometheus** for real-time monitoring and log tracking.
-- Configured **WireGuard** and **Nginx Proxy Manager** for secure communication and reverse proxy management.
-- Implemented **Fail2Ban** to detect and block malicious IPs and bots, with real-time alerts via a **Telegram bot**.
+- Integrated Grafana, Loki, and Prometheus for real-time monitoring and log tracking.
+- Configured WireGuard and Nginx Proxy Manager for secure communication and reverse proxy management.
+- Implemented Fail2Ban to detect and block malicious IPs and bots, with real-time alerts via a Telegram bot.
 
 

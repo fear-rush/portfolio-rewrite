@@ -12,7 +12,7 @@ stack: ['Geolocation', 'Geohash', 'Firebase', 'Next.js']
 
 ## Overview
 
-**Feed Forward** is a thesis project designed to reduce food waste by enabling user-to-user food sharing based on proximity. The project leverages **geolocation technology** and the **geohash algorithm** to connect individuals who have surplus food with those in need. By integrating real-time data synchronization with **Firebase** and an intuitive web interface, Feed Forward fosters sustainable practices and a sense of community.
+Feed Forward is a thesis project designed to reduce food waste by enabling user-to-user food sharing based on proximity. The project leverages geolocation technology and the geohash algorithm to connect individuals who have surplus food with those in need. By integrating real-time data synchronization with Firebase and an intuitive web interface, Feed Forward fosters sustainable practices and a sense of community.
 
 Key objectives:
 - Minimize food waste at the consumption level.
@@ -25,7 +25,7 @@ Key objectives:
 Feed Forward operates through three key components:
 
 ### 1. Geolocation and Geohash Algorithm
-- The geohash algorithm encodes geographic coordinates into alphanumeric strings, **grouping users based on proximity** for efficient food-sharing opportunities.
+- The geohash algorithm encodes geographic coordinates into alphanumeric strings, grouping users based on proximity for efficient food-sharing opportunities.
 
 ### 2. Firebase Backend
 - Manages real-time data synchronization to ensure food-sharing availability is updated instantly.
@@ -42,7 +42,7 @@ Feed Forward operates through three key components:
 :-------------------------:|:-------------------------:
 <center> Geohash z-order curve </center> |  <center> Geohash grid </center>
 
-Geohash is a spatial data structure that encodes geographical coordinates (latitude and longitude) into a compact alphanumeric string. It is hierarchical, meaning that **as the string length increases**, the represented area becomes smaller and more precise.
+Geohash is a spatial data structure that encodes geographical coordinates (latitude and longitude) into a compact alphanumeric string. It is hierarchical, meaning that as the string length increases, the represented area becomes smaller and more precise.
 
 #### a. How Geohash Works
 **Latitude and Longitude Encoding**:
@@ -55,13 +55,13 @@ Geohash is a spatial data structure that encodes geographical coordinates (latit
    - Each group is converted into a Base32 character to produce the geohash string.
 
 #### b. Z-Order Curve
-Geohash uses a **z-order curve** (also known as a Morton curve) to map 2D geographical coordinates to 1D binary strings.
+Geohash uses a z-order curve (also known as a Morton curve) to map 2D geographical coordinates to 1D binary strings.
 Key Benefits:
   - Spatial locality: Points close to each other geographically have similar geohashes. For example qqwz7d and qqwz7e is close to each other because they have similarity in qqwz7 geohash.
   - Efficient querying: Enables range searches and clustering of points within a specific area.
 
 #### c. Geohash Grid
-The Earth's surface is divided into a grid-like structure where each cell corresponds to a unique geohash. **Shorter geohash strings** represent larger grid cells, while **longer strings** represent smaller cells (higher precision). For example:  
+The Earth's surface is divided into a grid-like structure where each cell corresponds to a unique geohash. Shorter geohash strings represent larger grid cells, while longer strings represent smaller cells (higher precision). For example:  
     - A geohash with 5 characters may represent an with 4.9km x 4.9km wide with area deviation 2.4km
     - A geohash with 9 characters could represent an 4.8m x 4.8m wide with area deviation 0.0002km
 
@@ -75,27 +75,27 @@ Geolocation is the process of identifying the geographical location of a device 
 - **Real-Time Updates**: Automatically synchronizes food-sharing activities using Firebase.
 - **Chat Feature**: Allows receivers and givers of food to communicate directly within the application.
 - **Gamification Feature**: 
-  - Introduced a **leaderboard** that ranks users based on their contributions to food sharing.
+  - Introduced a leaderboard that ranks users based on their contributions to food sharing.
   - Unique badges with color for top contributors who frequently share food.
-  - Encourages participation through friendly competition, tapping into the **natural human tendency to compete and strive for recognition**. This creates a sense of achievement while promoting sustainable practices.
+  - Encourages participation through friendly competition, tapping into the natural human tendency to compete and strive for recognition. This creates a sense of achievement while promoting sustainable practices.
 
 ## Screenshots
 
 ### 1. Home Page
 ![Home page](/assets/projects/feedforward/home-page.webp)
 
-The home page provides options for users to sign in or sign up. New users can create an account using the **Sign Up** button, while existing users can access their accounts through the **Sign In** button.
+The home page provides options for users to sign in or sign up. New users can create an account using the Sign Up button, while existing users can access their accounts through the Sign In button.
 
 ### 2. Dashboard Page
 ![Dashboard page](/assets/projects/feedforward/dashboard-page.webp)
 
 Authenticated users are directed to the dashboard page. It features:
-- A **banner image** that links to articles or news related to food waste when clicked.
-- A **status bar** displaying the user's name, total food shared, total points, and a button to access the leaderboard modal.
-- A **floating action button** with the following options:
-  - **Home Button**: Redirects to the dashboard.
-  - **Share Food Button**: Opens a form to share food.
-  - **Profile Button**: Directs the user to their profile page.
+- A banner image that links to articles or news related to food waste when clicked.
+- A status bar displaying the user's name, total food shared, total points, and a button to access the leaderboard modal.
+- A floating action button with the following options:
+  - Home Button: Redirects to the dashboard.
+  - Share Food Button: Opens a form to share food.
+  - Profile Button: Directs the user to their profile page.
 
 ### 3. Leaderboard
 ![Leaderboard](/assets/projects/feedforward/leaderboard.webp)
@@ -106,17 +106,17 @@ The leaderboard modal showcases the top 5 users with the highest points, highlig
 ![Food detail page](/assets/projects/feedforward/fooddetail-page.webp)
 
 When a user clicks on a food item listed on the dashboard, they are directed to the food detail page. This page includes:
-- An **image** of the food.
-- The **name** and **description** of the food.
-- The **giver's name** and the **time** when the food was shared.
-- The **food's expiration time**.
-- The **location** of the food, displayed on a map.
-- A **Take Food button** that allows users to claim the food.
+- An image of the food.
+- The name and description of the food.
+- The giver's name and the time when the food was shared.
+- The food's expiration time.
+- The location of the food, displayed on a map.
+- A Take Food button that allows users to claim the food.
 
 ### 5. Chat Modal
 ![Chat modal](/assets/projects/feedforward/chat-modal.webp)
 
-After clicking the **Take Food button** on the food detail page, the giver and taker can communicate through the chat modal. This feature facilitates coordination about the food pickup, such as timing and location, ensuring smooth interaction between users.
+After clicking the Take Food button on the food detail page, the giver and taker can communicate through the chat modal. This feature facilitates coordination about the food pickup, such as timing and location, ensuring smooth interaction between users.
 
 ## Final Words
 

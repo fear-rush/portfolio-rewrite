@@ -12,7 +12,7 @@ stack: ['LoRa', 'Websocket', 'ESP32', 'Next.js']
 
 ## Overview
 
-**Tandur** is a final year capstone project focused on developing IoT-based agriculture, implementing LoRa (Long Range) and websocket technology to monitor plant conditions
+Tandur is a final year capstone project focused on developing IoT-based agriculture, implementing LoRa (Long Range) and websocket technology to monitor plant conditions
 
 Tandur allows users to select specific plants, such as tomatoes, strawberries, or chili, based on their unique water requirements. Utilizing a water dripping method instead of conventional sprinklers or irrigation techniques, Tandur ensures water efficiency. The system calculates optimal amount of water needed for plant growth using evaporation and plant-specific formulas. This approach not only conserves water but also supports healthy and sustainable plant growth, tailored to each plant’s needs.
 
@@ -20,16 +20,16 @@ Tandur allows users to select specific plants, such as tomatoes, strawberries, o
 
 ![Tandur scheme](/assets/projects/tandur/how-it-works.webp)
 
-Tandur IoT system operates through three key components: **Electrical System**, **Server**, and **User Interface**. Each component plays a vital role in ensuring seamless operation of smart irrigation system.
+Tandur IoT system operates through three key components: Electrical System, Server, and User Interface. Each component plays a vital role in ensuring seamless operation of smart irrigation system.
 
 ### a. Electrical (Physical Device and Sensor)
-**Electrical System** consists of sensors and ESP32 LoRa module. The **humidity** and **water debit sensors** measure soil moisture and water flow. When the system detects that the soil is dry or water levels are low, it sends this data to ESP32 LoRa module. Based on these readings, ESP32 can turn **water pump on or off**, activating water dripping system to irrigate plants efficiently. The sensors constantly monitor plant conditions to ensure that correct amount of water is supplied when needed.
+Electrical System consists of sensors and ESP32 LoRa module. The humidity and water debit sensors measure soil moisture and water flow. When the system detects that the soil is dry or water levels are low, it sends this data to ESP32 LoRa module. Based on these readings, ESP32 can turn water pump on or off, activating water dripping system to irrigate plants efficiently. The sensors constantly monitor plant conditions to ensure that correct amount of water is supplied when needed.
 
 ### b. Server
-Data from **ESP32 LoRa** module is sent to an **IoT server** like **Antares** (similar to ThinkSpeak), which collects and stores the data. The server uses **websocket** technology with **socket.io** to provide real-time data transmission. This allows the system to send updates instantly to user interface. The server continuously listens for new data from sensors, ensuring that system responds to real-time changes in plant conditions.
+Data from ESP32 LoRa module is sent to an IoT server like Antares (similar to ThinkSpeak), which collects and stores the data. The server uses websocket technology with socket.io to provide real-time data transmission. This allows the system to send updates instantly to user interface. The server continuously listens for new data from sensors, ensuring that system responds to real-time changes in plant conditions.
 
 ### c. User Interface (Next.js App)
-**User Interface** is built with **Next.js**, where all the collected data is displayed for users to view and interact with. The system integrates with **Firebase** for user authentication, securely storing user credentials. The UI also provides real-time weather data, sourced from **SolCast** and **OpenWeather** APIs, allowing users to monitor local conditions that influence irrigation decisions. Through the interface, users can track performance of the irrigation system, see historical data, and manage their plants more effectively.
+User Interface is built with Next.js, where all the collected data is displayed for users to view and interact with. The system integrates with Firebase for user authentication, securely storing user credentials. The UI also provides real-time weather data, sourced from SolCast and OpenWeather APIs, allowing users to monitor local conditions that influence irrigation decisions. Through the interface, users can track performance of the irrigation system, see historical data, and manage their plants more effectively.
 
 ## Features
 

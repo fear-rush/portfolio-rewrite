@@ -17,7 +17,7 @@ Welcome to the **not** so ultimate guide on setting up wg-easy on your VPS. If y
 
 ## Why You Need a VPN for Private Resources?
 
-Imagine you’ve deployed critical services on your VPS—like a private database, internal API, or admin dashboard. The last thing you want is to expose these sensitive services to the public internet. That’s where a **VPN** shines:
+Imagine you’ve deployed critical services on your VPS—like a private database, internal API, or admin dashboard. The last thing you want is to expose these sensitive services to the public internet. That’s where a VPN shines:
 1. **Secure Access**: Only authenticated users can access private resources.
 2. **Isolated Network**: VPNs keep your services on a private network, away from prying eyes.
 3. **Convenience**: Once connected to the VPN, you can use private services just like they’re on your local network.
@@ -34,7 +34,7 @@ By using this setup, the company's private resources remain secure and are not e
 
 ## What is WG-Easy?
 
-**WG-Easy** is a dockerized solution that simplifies managing WireGuard. With WG-Easy, you could easily set up and manage a WireGuard VPN and they already have built in web UI to add/remove VPN clients and monitor traffic.
+WG-Easy is a dockerized solution that simplifies managing WireGuard. With WG-Easy, you could easily set up and manage a WireGuard VPN and they already have built in web UI to add/remove VPN clients and monitor traffic.
 
 ## How to Implement WG-Easy on Your VPS
 

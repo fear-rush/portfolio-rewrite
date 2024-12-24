@@ -62,7 +62,7 @@
       </div>
     </header>
 
-    <div class="prose prose-lg md:prose-xl">
+    <div class="prose prose-lg prose-code:font-normal prose-strong:font-bold md:prose-xl">
       {@render data.content()}
     </div>
   </article>

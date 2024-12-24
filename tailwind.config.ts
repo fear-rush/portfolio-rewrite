@@ -5,10 +5,6 @@ import type { Config } from "tailwindcss";
 export default {
   content: ["./src/**/*.{html,js,svelte,ts}"],
   theme: {
-    fontFamily: {
-      sans: ['Space Mono', 'system-ui', 'sans-serif'],
-      mono: ['monospace']
-    },
     extend: {
       typography: {
         DEFAULT: {
