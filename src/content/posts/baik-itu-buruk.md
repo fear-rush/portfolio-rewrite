@@ -32,13 +32,13 @@ Beberapa pertanyaan yang belakangan ini lewat di kepalaku adalah "Apa itu baik?"
 
 *Apa itu baik?*
 
-Aku bukan ahli bahasa atau mendefinisikan kata secara harfiah, jadi aku mendefinisikan kata 'baik' menurut versiku saja. Menurutku, baik adalah memberikan yang seharusnya diberikan kepada orang lain. Baik tidak hanya dilakukan dalam lingkup orang yang mampu kepada orang tidak mampu. Namun, baik juga dilakukan dalam lingkup yang lebih luas. Contoh hal baik adalah menyuruh orang lain yang sedang berpergian untuk mengabari bahwa dia sudah sampai tujuan dengan selamat. Mungkin, agak tidak nyambung dengan 'baik' yang kudefinisikan tadi, tapi you know what I mean. Lagi males jelasin panjang kali lebar.
+Aku bukan ahli bahasa atau pandai dalam mendefinisikan kata secara harfiah, jadi aku mendefinisikan kata 'baik' menurut versiku saja. Menurutku, baik adalah memberikan yang seharusnya diberikan kepada orang lain. Baik tidak hanya dilakukan dalam lingkup orang yang mampu kepada orang tidak mampu. Namun, baik juga dilakukan dalam lingkup yang lebih luas. Contoh hal baik adalah menyuruh orang lain yang sedang berpergian untuk mengabari bahwa dia sudah sampai tujuan dengan selamat. Mungkin, agak tidak nyambung dengan 'baik' yang kudefinisikan tadi, tapi you know what I mean. Lagi males jelasin panjang kali lebar.
 
 *Bagaimana berbuat baik?*
 
 Pada awalnya aku tidak kepikiran pertanyaan ini, karena kayak, orang mana yang harus diajarin cara berbuat baik? Udah common sense, kan? Kalau orang tuh sudah tahu mana yang baik dan mana yang buruk? Bahkan dari kecil pun sudah diajari hal baik, mana ada orang yang kecilnya diajarin sama orang tuanya hal buruk?
 
-Oke, paragraf pertama itu adalah pemikiranku yang dulu. Pada kenyataannya, dunia tidak berjalan sesuai keinginanku. Tidak semua hal yang menurutku baik dan aku niatkan dengan baik bisa diterima dengan baik oleh orang lain. Tapi, pada akhirnya aku tetap ingin selalu berbuat baik kepada orang lain tanpa terkecuali. Namun, perbedaannya adalah, jika aku mulai mempertanyakan kebaikanku, bahkan sedikit pun, aku harus berpikir lagi, apakah perbuatan baikku ini benar? Karena baik belum tentu benar. Dan seharusnya, jika aku berbuat baik, tidak harus berpikir, karena ya, ngapain bro? Masa berbuat baik harus mikir?
+Oke, paragraf pertama itu adalah pemikiranku yang dulu. Pada kenyataannya, dunia tidak berjalan sesuai keinginanku. Tidak semua hal yang menurutku baik dan aku niatkan dengan baik bisa diterima dengan baik oleh orang lain. Tapi, pada akhirnya aku tetap ingin selalu berbuat baik kepada orang lain tanpa terkecuali. Namun, perbedaannya adalah, <mark>jika aku mulai mempertanyakan kebaikanku</mark>, bahkan sedikit pun, aku harus berpikir lagi, apakah perbuatan baikku ini benar? Maka ada hal yang 'salah' dalam perbuatan baikku ini. Karena seharusnya jika aku berbuat baik, maka aku tidak harus berpikir dua atau tiga kali, karena ya, ngapain bro? Masa berbuat baik harus mikir?
 
 *Apakah ada konsekuensi buruk dari berbuat baik?*
 
